@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+<style type="text/css" id="dcoder_stylesheet">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+}
+
+.login-container {
+  background: #fff;
+  padding: 30px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-box {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-box input:focus {
+  border-color: #4e73df;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4e73df;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #3751c6;
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #1cc88a;
+  text-decoration: none;
+}
+</style></head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#" method="post">
+      <div class="input-box">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Masukkan username" required>
+      </div>
+
+      <div class="input-box">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Masukkan password" required>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <p class="register">Belum punya akun? <a href="#">Daftar</a></p>
+    </form>
+  </div>
+
+</body></html>
